@@ -1,78 +1,77 @@
 # TRON Enhanced
 
-A cutting-edge note-taking application with AI-powered features.
+TRON Enhanced is an advanced marketing automation platform with AI-powered note parsing capabilities. This platform enables seamless conversion of natural language inputs into structured marketing content, workflows, and analytics.
 
-## Features
+## Project Overview
 
-- Create and manage notes with rich text formatting
-- Voice transcription using Deepgram
-- AI-powered search and note connections
-- Built with React, TypeScript, and modern web technologies
+TRON Enhanced combines natural language processing with marketing automation tools to create a powerful platform for content creation, workflow management, and decision support. The system is built on a Model Context Protocol (MCP) server architecture for secure and efficient processing.
 
-## Setup
+## Key Capabilities
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+The platform offers two main capability categories:
 
-3. Set up environment variables:
-   Create a `.env` file in the root directory with the following variables:
-   ```
-   OPENAI_API_KEY=your_openai_api_key
-   DEEPGRAM_API_KEY=your_deepgram_api_key
-   PROXY_URL=http://localhost:3002/api/deepgram (optional, defaults to this value)
-   PROXY_PORT=3002 (optional, defaults to 3002)
-   ```
+### Note Parsing Capabilities
 
-4. Start the application:
-   ```bash
-   npm run start:all
-   ```
-   
-   This will start both the proxy server and the development server concurrently.
+Detailed in [note-parsing-capabilities.md](note-parsing-capabilities.md), these features enable the system to transform natural language inputs into structured data and actions.
 
-   Alternatively, you can start each server individually:
-   ```bash
-   # In one terminal
-   npm run proxy
-   
-   # In another terminal
-   npm run dev
-   ```
+Key capabilities include:
+- Multi-Intent Parsing Engine
+- Business Context Recognition
+- Meeting Transcript Structuring
+- Project Management Integration
+- Knowledge Graph Integration
 
-## Browser CORS Issues
+### Marketing Automation Capabilities
 
-Deepgram does not allow direct API calls from browsers due to CORS restrictions. The application uses a proxy server to handle these API calls. Make sure to start the proxy server before using voice transcription features.
+Detailed in [marketing-automation-capabilities.md](marketing-automation-capabilities.md), these features focus specifically on marketing applications and integrations.
 
-## Environment Variables
+Key capabilities include:
+- Content Generation Agent
+- Campaign Analytics Agent
+- Email Marketing Automation Agent
+- Competitive Intelligence Agent
+- Customer Segmentation Agent
 
-- `OPENAI_API_KEY`: Required for AI features like processing voice commands and generating connections between notes
-- `DEEPGRAM_API_KEY`: Required for voice transcription (used by the proxy server)
-- `PROXY_URL`: URL to the proxy server (defaults to http://localhost:3002/api/deepgram)
-- `PROXY_PORT`: Port for the proxy server (defaults to 3002)
+## Architecture
 
-## Automated Development
+TRON Enhanced uses a secure MCP architecture to provide:
 
-You can use the automation script to set up the project:
+1. **Secure API Access**: All third-party API keys are stored securely on the server
+2. **Flexible Integrations**: Modular design for easy addition of new capabilities
+3. **Consistent Protocol**: Standardized communication between system components
 
-```bash
-node automate.js
-```
+## Implementation Plan
 
-## Voice Transcription
+The development follows a phased approach:
 
-The application uses Deepgram for high-quality voice transcription. Voice commands can be used to create notes, search for content, and perform various actions within the application.
+### Phase 1: Core Marketing Capabilities
+1. Content Generation Agent
+2. Multi-Intent Parsing Engine
+3. Campaign Analytics Agent
+4. Temporal Planning Engine
 
-## Testing
+### Phase 2: Content Optimization
+1. Audience-Aware Parsing
+2. Knowledge Graph Integration
+3. SEO Optimization Agent
+4. Multi-Modality Content Structuring
 
-Run tests with:
+### Phase 3: Workflow Optimization
+1. Kanban Board Generator
+2. Project Management Integration
+3. Process Documentation Parser
+4. Email Marketing Automation Agent
 
-```bash
-npm test
-```
+### Phase 4: Advanced Analytics & Intelligence
+1. Competitive Intelligence Agent
+2. Feedback Loop Analyzer
+3. Customer Segmentation Agent
+4. Decision Support Framework
+
+## Getting Started
+
+[Development instructions will be added as components are implemented]
 
 ## License
 
-MIT 
+[License information to be added] 
